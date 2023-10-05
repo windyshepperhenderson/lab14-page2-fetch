@@ -3,9 +3,10 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: cornsilk;
-  color: saddlebrown;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif,
+    "Times New Roman", Times, serif;
+  background-color: #6e0003;
+  color: rgb(0, 255, 55);
 }
 
 main {
@@ -13,32 +14,35 @@ main {
   margin: 3rem auto;
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 6rem 30rem 20rem 6rem;
+  grid-template-rows: 6rem 13rem 5rem 20rem 6rem;
 }
 
 #siteLogo {
-  width: 180px;
-  height: 80px;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  max-width: 20%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 h1 {
-  font-size: 3rem;
-  color: rosybrown;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  font: bold;
+  color: mintcream;
   line-height: 0.8;
-  margin: 3rem 0 1rem;
+  margin: 1.5rem 0 1rem;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+  display: flex;
+  justify-content: center;
 }
 
 section {
-  background-color: rgba(211, 187, 176, 0.3);
-  max-height: 26rem;
+  background-color: #31081f;
+  max-height: 13rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -52,14 +56,24 @@ section img {
   width: 200px;
   height: 200px;
   border: 5px solid transparent;
+  margin: 4px;
 }
 
-#view-results,
-#results {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
+.aggResults {
+  background-color: #6e0003;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.2rem;
+}
+a:link {
+  color: mintcream;
+}
+a:visited {
+  color: mintcream;
 }
 
 .chartbox {
